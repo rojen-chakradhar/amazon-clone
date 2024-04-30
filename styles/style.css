@@ -22,7 +22,7 @@ body {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-image: url(https://m.media-amazon.com/images/I/61P7hqIHrdL._SX3000_.jpg);
+	background-image: url('/assests/images/bg.webp');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
