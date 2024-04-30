@@ -5,42 +5,82 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Amazon Clone</title>
 		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/header.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+		<link rel="stylesheet" href="./styles/sidenav.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<div id="main">
             <header id="header">
                 <nav>
-                    <img src="https://d24wuq6o951i2g.cloudfront.net/img/events/id/457/457835240/assets/68cf2b4ace3170b53a34066775dcc2bd.amazon_logo_RGB_REV.png" alt="logo">
+                    <img src="./assests/images/logo.webp" alt="logo">
                     <div id="address">
-                        <p>Deliver to</p>
-                        <h3><i class="fas fa-location-dot"></i> Nepal</h3>
-                    </div>
-                    <form>
-                        <div id="opt">
-                            <p>all</p> <i class="fas fa-chevron-down"></i>
+                        <h3><i class="fas fa-location-dot"></i></h3>
+                        <div id="text">
+                            <p>Deliver to</p>
+                            <h3>Nepal</h3>
                         </div>
+                    </div>
+                    <form id="search">
+                        <details id="categories">
+                            <summary>all <i class="fas fa-caret-down"></i></summary>
+                            <ul>
+                                <li>all departments</li>
+                                <li>arts & crafts</li>
+                                <li>automotive</li>
+                                <li>baby</li>
+                                <li>beauty & personal care</li>
+                                <li>books</li>
+                                <li>boy's fashion</li>
+                                <li>computers</li>
+                                <li>deals</li>
+                                <li>digital music</li>
+                                <li>electronics</li>
+                                <li>girl's fashion</li>
+                                <li>health & household</li>
+                                <li>home & kitchen</li>
+                                <li>industrial & scientific</li>
+                                <li>kindle store</li>
+                                <li>Lauggage</li>
+                                <li>men's fashion</li>
+                                <li>movies & tV</li>
+                                <li>music, cDs and vinyl</li>
+                                <li>pet suppoptiones</li>
+                                <li>prime video</li>
+                                <li>software</li>
+                                <li>sports & outdoors</li>
+                                <li>tools & home improvement</li>
+                                <li>toys & games</li>
+                                <li>video games</li>
+                                <li>women's fashion</li>
+                            </ul>
+                        </details>
                         <input type="text" name="search" placeholder="search amazon" id="input">
                         <div id="icon">
                             <i class="fas fa-search"></i>
                         </div>
                     </form>
+                    <div id="lang">
+                        <img src="./assests/images/USAflag.webp" alt="USA flag">
+                        <h2>EN <i class="fas fa-caret-down"></i></h2>
+                    </div>
                     <div id="acc">
                         <p>Hello, sign in</p>
-                        <h3>Account & Links</h3>
+                        <h3>Account & Links <i class="fas fa-caret-down"></i></h3>
                     </div>
                     <div id="order">
                         <p>Returns</p>
                         <h3>& Orders</h3>
                     </div>
                     <div id="cart">
-                        <h1><i class="fas fa-shopping-cart"></i></h1>
+                        <h1><i class="fas fa-cart-plus"></i></h1>
                         <h3>Cart</h3>
                     </div>
                 </nav>
-                <nav>
+                <nav id="nav">
                     <ul>
-                        <div id="menu">
+                        <div id="menu" onclick="openNav()">
                             <i class="fas fa-bars"></i>
                             <p>all</p>
                         </div>
@@ -52,12 +92,20 @@
                             <li>sell</li>
                         </ul>
                     </ul>
-                    <p>Shop deals in Electronics</p>
                 </nav>
+                <div id="overlap">
+                    <div id="sidenav">
+                        <i id="close" class="fas fa-xmark" onclick="closeNav()"></i>
+                        <div id="act">
+                            <h1><i class="fa-solid fa-circle-user"></i> Hello, sign in</h1>
+                        </div>
+                    </div>
+                </div>
             </header>
             <div id="page1">
-                <div id="msg">You are on amazon.com. You can also shop on Amazon Nepla for milions of products with fast local delivery. <span>Click here to go to amazon.in</span></div>
+                <!-- <div id="msg">You are on amazon.com. You can also shop on Amazon Nepla for milions of products with fast local delivery. <span>Click here to go to amazon.in</span></div> -->
             </div>
+            <div id="container">
             <div id="collections">
                 <div class="collection gaming">
                     <h1>Gaming accessories</h1>
@@ -417,64 +465,66 @@
                     <img src="https://m.media-amazon.com/images/I/71faTWApPcL._AC_SY200_.jpg" alt="">
                 </div>
             </div>
-            <div id="bgsinin">
-                <div id="signin">
-                    <p>See personalized recommendations</p>
-                    <a href=""><button>Sign in</button></a>
-                    <p>New customer? <a href="">Start here.</a></p>
-                </div>
             </div>
-            <a href="#header"><div id="btt">
-                <p>Back to top</p>
-            </div></a>
-            <div id="ufooter">
-                <div class="texts">
-                    <div class="text">
-                        <h4>Get to Know Us</h4>
-                        <p>Careers</p>
-                        <p>Blog</p>
-                        <p>About Amazon</p>
-                        <p>Investor Relations</p>
-                        <p>Careers</p>
-                        <p>Careers</p>
-                    </div>
-                    <div class="text">
-                        <h4>Make Money with Us</h4>
-                        <p>Careers</p>
-                        <p>Blog</p>
-                        <p>About Amazon</p>
-                        <p>Investor Relations</p>
-                        <p>Careers</p>
-                        <p>Careers</p>
-                    </div>
-                    <div class="text">
-                        <h4>Amazon Payment Products</h4>
-                        <p>Amazon Business Card</p>
-                        <p>Shop with Points</p>
-                        <p>Reload Your Balance</p>
-                        <p>Amazon Currency Converter</p>
-                    </div>
-                    <div class="text">
-                        <h4>Let Us Help You</h4>
-                        <p>Amazon and COVID- 19</p>
-                        <p>Your Account</p>
-                        <p>Your Orders</p>
-                        <p>Shipping Rates & Policies</p>
-                        <p>Returns & Replacements</p>
-                        <p>Manage Your Content and Devices</p>
-                        <p>Account Assistant</p>
-                        <p>Help</p>
+            <footer>
+                <div id="bgsinin">
+                    <div id="signin">
+                        <p>See personalized recommendations</p>
+                        <a href=""><button>Sign in</button></a>
+                        <p>New customer? <a href="">Start here.</a></p>
                     </div>
                 </div>
-                <div id="footer">
-                    <img src="https://d24wuq6o951i2g.cloudfront.net/img/events/id/457/457835240/assets/68cf2b4ace3170b53a34066775dcc2bd.amazon_logo_RGB_REV.png" alt="" width="100vw">
-                    <button><i class="fas fa-earth"></i> English</button>
-                    <button><i class="fa-solid fa-dollar-sign"></i> USD - U.S. Dollar</button>
-                    <button><img src="https://flagsireland.com/cdn/shop/products/UnitedStatesofAmerica_USA_Flag.png?v=1679327841" alt="" width="15vw"> United States</button>
+                <a href="#header"><div id="btt">
+                    <p>Back to top</p>
+                </div></a>
+                <div id="ufooter">
+                    <div class="texts">
+                        <div class="text">
+                            <h4>Get to Know Us</h4>
+                            <p>Careers</p>
+                            <p>Blog</p>
+                            <p>About Amazon</p>
+                            <p>Investor Relations</p>
+                            <p>Careers</p>
+                            <p>Careers</p>
+                        </div>
+                        <div class="text">
+                            <h4>Make Money with Us</h4>
+                            <p>Careers</p>
+                            <p>Blog</p>
+                            <p>About Amazon</p>
+                            <p>Investor Relations</p>
+                            <p>Careers</p>
+                            <p>Careers</p>
+                        </div>
+                        <div class="text">
+                            <h4>Amazon Payment Products</h4>
+                            <p>Amazon Business Card</p>
+                            <p>Shop with Points</p>
+                            <p>Reload Your Balance</p>
+                            <p>Amazon Currency Converter</p>
+                        </div>
+                        <div class="text">
+                            <h4>Let Us Help You</h4>
+                            <p>Amazon and COVID- 19</p>
+                            <p>Your Account</p>
+                            <p>Your Orders</p>
+                            <p>Shipping Rates & Policies</p>
+                            <p>Returns & Replacements</p>
+                            <p>Manage Your Content and Devices</p>
+                            <p>Account Assistant</p>
+                            <p>Help</p>
+                        </div>
+                    </div>
+                    <div id="footer">
+                        <img src="https://d24wuq6o951i2g.cloudfront.net/img/events/id/457/457835240/assets/68cf2b4ace3170b53a34066775dcc2bd.amazon_logo_RGB_REV.png" alt="" width="100vw">
+                        <button><i class="fas fa-earth"></i> English</button>
+                        <button><i class="fa-solid fa-dollar-sign"></i> USD - U.S. Dollar</button>
+                        <button><img src="https://flagsireland.com/cdn/shop/products/UnitedStatesofAmerica_USA_Flag.png?v=1679327841" alt="" width="15vw"> United States</button>
+                    </div>
                 </div>
-            </div>
-            <div id="dfooter">
-                <div class="fw">
+                <div id="dfooter">
+                    <div class="fw">
                     <div class="f">
                         <h5>Amazon Music</h5>
                         <p>Stream millions</p>
@@ -568,7 +618,7 @@
                         <p>Indie Digital &</p>
                         <p>Print Publishing</p>
                         <p>Made Easy</p>
-                    </div>
+                        </div>
                     <div class="f">
                         <h5>Prime Video</h5>
                         <h5>Direct</h5>
@@ -634,8 +684,7 @@
                     </ul>
                     <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
                 </div>
-            </div>
-        </div>
+            </footer>
         <script src="./scripts/script.js"></script>
 	</body>
 </html>
