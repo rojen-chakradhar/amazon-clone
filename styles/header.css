@@ -271,6 +271,10 @@ nav #search {
 	background-color: #202933;
 }
 
+nav ul a li{
+	color: #fff;
+}
+
 #roverlay {
 	height: 100%;
 	width: 100%;
