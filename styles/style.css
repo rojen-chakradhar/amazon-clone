@@ -18,39 +18,10 @@ body {
 	background-color: #dde1e1;
 }
 
-#page1 {
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	background-image: url('/assests/images/bg.webp');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #000;
-	z-index: 0;
-}
-/* 
-#msg {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 2vw;
-	height: 2vw;
-	width: 90%;
-	font-size: 1.1vw;
-	text-align: center;
-	background-color: #fff;
-}
-
-#msg span {
-	color: #00a35f;
-	cursor: pointer;
-} */
-
 #container {
 	position: relative;
 	margin-top: -350px;
-	z-index: 20;
+	z-index: 1;
 	width: 100%;
 }
 
