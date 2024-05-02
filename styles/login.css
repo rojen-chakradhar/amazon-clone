@@ -26,12 +26,12 @@ body {
 	flex-direction: column;
 }
 
-a{
-    color: #5266c4;
+a {
+	color: #5266c4;
 }
 
-a:hover{
-    text-decoration: underline;
+a:hover {
+	text-decoration: underline;
 }
 
 #logo {
@@ -39,150 +39,151 @@ a:hover{
 }
 
 form {
-    height: 345px;
-    width: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px 30px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+	width: 330px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 30px 0;
+	border: 1px solid #ccc;
+	border-radius: 8px;
 }
 
-h1{
-    margin-bottom: 15px;
-    font-size: 25px;
-    font-weight: 100;
+h1 {
+	margin-bottom: 15px;
+	font-size: 25px;
+	font-weight: 100;
 }
 
 label {
-    font-size: 12px;
-    font-weight: 900;
+	font-size: 12px;
+	font-weight: 900;
 }
 
-input{
-    width: 270px;
-    height: 30px;
-    padding: 5px;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    border: 1px solid #9a9a9a;
+input {
+	width: 270px;
+	height: 30px;
+	padding: 5px;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	border: 1px solid #9a9a9a;
 }
 
-form button{
-    width: 270px;
-    height: 30px;
-    padding: 5px;
-    border: none;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    background-color: #ffd814;
+form button {
+	width: 270px;
+	height: 30px;
+	padding: 5px;
+	border: none;
+	border-radius: 8px;
+	margin-bottom: 15px;
+    cursor: pointer;
+	background-color: #ffd814;
 }
 
 form p {
-    font-size: 10px;
-    margin-bottom: 20px;
+	font-size: 10px;
+	margin-bottom: 20px;
 }
 
 details {
-    font-size: 12px;
-    margin-bottom: 20px;
+	font-size: 12px;
+	margin-bottom: 20px;
 }
 
 i {
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
 summary {
-    display: inline-block;
+	display: inline-block;
 }
 
 span {
-    color: #5266c4;
+	color: #5266c4;
 }
 
 summary:hover span {
-    text-decoration: underline;
-    cursor: pointer;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
-details ul{
-    margin-left: 15px;
-    color: #5266c4;
+details ul {
+	margin-left: 15px;
+	color: #5266c4;
 }
 
-hr{
-    height: 1px;
-    width: 100%;
-    border: none;
-    margin-bottom: 10px;
-    background-color: #ccc;
+hr {
+	height: 1px;
+	width: 100%;
+	border: none;
+	margin-bottom: 10px;
+	background-color: #ccc;
 }
 
 h4 {
-    margin-bottom: 5px;
-    font-size: 12px;
-    font-weight: 600;
+	margin-bottom: 5px;
+	font-size: 12px;
+	font-weight: 600;
 }
 
 a p {
-    font-size: 12px;
+	font-size: 12px;
 }
 
-#btm{
-    width: 330px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-wrap: nowrap;
-    margin-top: 15px;
-    margin-bottom: 5px;
+#btm {
+	width: 330px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-wrap: nowrap;
+	margin-top: 15px;
+	margin-bottom: 5px;
 }
 
 #btm hr {
-    margin-top: 8px;
-    width: 35%;
+	margin-top: 8px;
+	width: 35%;
 }
 
 #btm p {
-    font-size: 10px;
-    color: #aaa;
+	font-size: 10px;
+	color: #aaa;
 }
 
-a button {
-    width: 330px;
-    height: 30px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 12px;
-    background-color: #fff;
-    box-shadow: 0 0 2px #aaa, 0 0 2px #aaa;
+#btn {
+	width: 330px;
+	height: 30px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 12px;
+    cursor: pointer;
+	background-color: #fff;
+	box-shadow: 0 0 2px #aaa, 0 0 2px #aaa;
 }
 
-#bb{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 55%;
-    margin-top: 20px;
-    height: 1px;
-    border: none;
-    background-color: #ddd;
-    box-shadow: 0 0 0 #000, 0 0 2px linear-gradient(#ddd, #aaa, #ddd);
+#bb {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 55%;
+	margin-top: 20px;
+	height: 1px;
+	border: none;
+	background-color: #ddd;
+	box-shadow: 0 0 0 #000, 0 0 2px linear-gradient(#ddd, #aaa, #ddd);
 }
 
-ol{
-    display: flex;
-    align-items: center;
-    column-gap: 25px;
-    margin-top: 10px;
-    font-size: 10px;
+ol {
+	display: flex;
+	align-items: center;
+	column-gap: 25px;
+	margin-top: 10px;
+	font-size: 10px;
 }
 
-#copyright{
-    font-size: 11px;
-    margin-top: 10px;
-    font-weight: 100;
-    color: #777;
+#copyright {
+	font-size: 11px;
+	margin-top: 10px;
+	font-weight: 100;
+	color: #777;
 }

@@ -15,9 +15,11 @@ nav img {
 nav p {
 	cursor: pointer;
 	margin-bottom: -5px;
+	color: #fff;
 }
 
 nav h3 {
+	color: #fff;
 	cursor: pointer;
 }
 
@@ -178,6 +180,7 @@ nav #search {
 
 #cart i {
 	font-size: 25px;
+	color: #fff;
 }
 
 #cart h3 {
